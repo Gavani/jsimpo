@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title></title>
+    <link rel="stylesheet" href="./assets/styles/foundation.css"/>
+    <link rel="stylesheet" href="./assets/styles/main.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-md-8 col-xs-12 message__col">
+            <div class="training-checkout__head-text">
+              <h2 class="text-uppercase">first aid certificate</h2>
+              <h3>Course name - Emergency First Aid at Work Course</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, saepe. Asperiores necessitatibus illum, cumque itaque eveniet et! Sunt, esse modi? Et id labore aperiam quas dignissimos dolor aspernatur eum commodi.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, tenetur?</p>
+            </div>
+            <div class="training-checkout__head-video-wrapper">
+              <div class="training-checkout__head-video text-center">
+                <p>Video Course will be available after payment</p>
+              </div>
+            </div>
+            <div class="training-checkout__body-wrapper">
+              <div class="row">
+                <div class="col-lg-8 col-xs-12 training-checkout__body-col training-checkout__body-col_left">
+                  <div class="training-checkout__body-left">
+                    <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action active" id="list-debit-list" data-toggle="list" href="#list-debit" role="tab" aria-controls="debit"><img src="assets/img/logo/mastercard.png" alt="Logo"/></a><a class="list-group-item list-group-item-action disabled" id="list-paypal-list" data-toggle="list" href="#list-paypal" role="tab" aria-controls="paypal"><img src="assets/img/logo/paypal.png" alt="Logo"/></a><a class="list-group-item list-group-item-action" id="list-bank-list" data-toggle="list" href="#list-bank" role="tab" aria-controls="bank"><img src="assets/img/logo/bank-transfer-logo.png" alt="Logo"/></a></div>
+                    <div class="tab-content" id="trainingPayment-tab">
+                      <div class="tab-pane fade show active" id="list-debit" role="tabpanel" aria-labelledby="list-debit-list">
+                        <form class="basket__body-form" action="/charge" method="post" id="payment-form">
+                          <div class="basket__body-form-head">
+                            <p>Secure Payment</p>
+                          </div>
+                          <div class="basket__body-form-desc">
+                            <p>Please use the form below to make an instant credit card payment to us. For security, we use Stripe to process payments for customers and do not store any credit card information.</p>
+                          </div>
+                          <div class="basket__body-form-row basket__body-form-row_card">
+                            <label class="text-uppercase basket__body-form-label" for="card-element">Credit card number</label>
+                            <div id="card-element"></div>
+                            <div id="card-errors" role="alert"></div>
+                          </div>
+                          <div class="basket__body-submit">
+                            <button class="text-uppercase form__submit-btn" type="submit">Make payment</button>
+                          </div>
+                          <div class="basket__body-footer">
+                            <p>By clicking Make Payment, you are agreeing to our <a href="#">terms and conditions.</a></p>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="tab-pane fade" id="list-paypal" role="tabpanel" aria-labelledby="list-paypal-list">
+                        <div class="tab-pane__training-head">
+                          <div class="tab-pane__training-head-left">
+                            <h3 class="text-uppercase">Invoice</h3>
+                            <p>Apllications must be paid within the next 7 days</p>
+                          </div>
+                          <div class="tab-pane__training-head-right"><img src="assets/img/logo/Logo2-01.png" alt="Logo"/></div>
+                        </div>
+                        <div class="tab-pane__training-body">
+                          <div class="tab-pane__training-body-row">
+                            <div class="tab-pane__training-body-row-table">
+                              <table style="width: 100%; margin-bottom: 50px;">
+                                <tr>
+                                  <td>
+                                    <p style="font-size: 14px;"> FULL NAME:</p>
+                                  </td>
+                                  <td style="vertical-align: top; padding-top: 7px; padding-left: 7px; border: 1px solid;">
+                                    <p style="font-size: 11px;">FIRST NAME</p>
+                                  </td>
+                                  <td style="vertical-align: top; padding-top: 7px; padding-left: 7px; border: 1px solid;">
+                                    <p style="font-size: 11px;">LAST NAME</p>
+                                  </td>
+                                  <td class="tab-pane__training-body-table_fs" rowspan="3">
+                                    <p>1st Floor</p>
+                                    <p>9 White Lion Street</p>
+                                    <p>London</p>
+                                    <p>N1 9PD</p>
+                                    <p>T: 0203 290 9696</p>
+                                    <p>E: info@email.com</p>
+                                    <p>www.site.co.uk</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p style="font-size: 14px;"> INVOICE DATE:</p>
+                                  </td>
+                                  <td class="tab-pane__training-body-table_first-width" colspan="2" style="vertical-align: top; padding-top: 7px; padding-left: 7px; border: 1px solid;"> 
+                                    <p style="font-size: 11px;">DD.MM.YYYY</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td> 
+                                    <p style="font-size: 14px;"> PREFERENCE:</p>
+                                  </td>
+                                  <td colspan="2" style="border: 1px solid; padding-left: 7px;">
+                                    <p style="font-size: 14px;">300-54</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane__training-body-row">
+                            <div class="tab-pane__training-body-row-table">
+                              <table class="tab-pane__training-body-table_second" style="width: 100%; margin-bottom: 50px; text-align: center;">
+                                <tr>
+                                  <td class="tab-pane__training-body-table_second-padd" style="width: 47%; border: 1px solid"><span>DESCRIPTION</span></td>
+                                  <td class="tab-pane__training-body-table_second-padd" style="width:30%; border: 1px solid"> <span>DURATION</span></td>
+                                  <td class="tab-pane__training-body-table_second-padd" style="border: 1px solid"><span>PRICE</span></td>
+                                </tr>
+                                <tr>
+                                  <td style="border: 1px solid">
+                                    <p>E-commerce and content management, systems, HTML, basics, Adobe Photoshop Introduction</p>
+                                  </td>
+                                  <td style="border: 1px solid"> 
+                                    <p>from 1 full day to 3 days</p>
+                                  </td>
+                                  <td style="border: 1px solid">
+                                    <p>$ 220.00</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" style="text-align: right; border-color: transparent;"><span>SUBTOTAL</span></td>
+                                  <td style="border: 1px solid">
+                                    <p>$ 220.00</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" style="text-align: right; border-color: transparent;"><strong>TOTAL</strong></td>
+                                  <td style="border: 1px solid"><strong>$ 220.00</strong></td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" style="text-align: right; border-color: transparent;"><span>DEPOSIT DUE</span></td>
+                                  <td style="border: 1px solid">
+                                    <p>$ </p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                            <div class="tab-pane__training-body-bank-account">
+                              <h3 class="text-uppercase">please make a payment to the following bank account:</h3>
+                              <table>
+                                <tr>
+                                  <td colspan="2">
+                                    <p>Barclays Bank Plc</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p>Acount name:</p>
+                                  </td>
+                                  <td>
+                                    <p>Aston Logistics Ltd</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p>Sort Code:</p>
+                                  </td>
+                                  <td>
+                                    <p>20-27-58</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p>Account:</p>
+                                  </td>
+                                  <td>
+                                    <p>33236919</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p>Payment ref:</p>
+                                  </td>
+                                  <td>
+                                    <p>300-54</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane__training-footer-row">
+                            <div class="tab-pane__training-footer-warning">
+                              <p>We only accept Wire and Bank Transfers for annual sibscriptions.</p>
+                              <p>Yearly billing price displayed below.</p>
+                            </div>
+                            <div class="tab-pane__training-footer-order">
+                              <table>
+                                <tr>
+                                  <td>
+                                    <p>You've selected:</p>
+                                  </td>
+                                  <td>
+                                    <p>Order total:</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><strong>First Aid Certifiicate</strong>
+                                    <p>online course</p>
+                                  </td>
+                                  <td style="vertical-align: top"><strong>$40.00</strong></td>
+                                </tr>
+                              </table>
+                            </div>
+                            <div class="tab-pane__training-footer-btn"><a href="#">Send Order </a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="list-bank" role="tabpanel" aria-labelledby="list-bank-list">
+                        <div class="tab-pane__training-head">
+                          <div class="tab-pane__training-head-left">
+                            <h3 class="text-uppercase">Invoice</h3>
+                            <p>Apllications must be paid within the next 7 days</p>
+                          </div>
+                          <div class="tab-pane__training-head-right"><img src="assets/img/logo/Logo2-01.png" alt="Logo"/></div>
+                        </div>
+                        <div class="tab-pane__training-body">
+                          <div class="tab-pane__training-body-row">
+                            <div class="tab-pane__training-body-row-table">
+                              <table style="width: 100%; margin-bottom: 50px;">
+                                <tr>
+                                  <td>
+                                    <p style="font-size: 14px;"> FULL NAME:</p>
+                                  </td>
+                                  <td style="vertical-align: top; padding-bottom: 12px; padding-top: 2px; padding-left: 7px; border: 1px solid;">
+                                    <p style="font-size: 11px;">FIRST NAME</p>
+                                  </td>
+                                  <td style="vertical-align: top; padding-bottom: 12px; padding-top: 2px; padding-left: 7px; border: 1px solid;">
+                                    <p style="font-size: 11px;">LAST NAME</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p style="font-size: 14px;"> INVOICE DATE:</p>
+                                  </td>
+                                  <td class="tab-pane__training-body-table_first-width" colspan="2" style="vertical-align: top; padding-bottom: 12px; padding-top: 2px; padding-left: 7px; border: 1px solid;"> 
+                                    <p style="font-size: 11px;">DD.MM.YYYY</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td> 
+                                    <p style="font-size: 14px;"> PREFERENCE:</p>
+                                  </td>
+                                  <td colspan="2" style="border: 1px solid; padding: 3px 0 3px 7px;">
+                                    <p style="font-size: 14px;">300-54</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane__training-body-row">
+                            <div class="tab-pane__training-body-row-table">
+                              <table class="tab-pane__training-body-table_second" style="width: 100%; margin-bottom: 50px; text-align: center;">
+                                <tr>
+                                  <td class="tab-pane__training-body-table_second-padd" style="width: 47%; border: 1px solid"><span>DESCRIPTION</span></td>
+                                  <td class="tab-pane__training-body-table_second-padd" style="width:30%; border: 1px solid"> <span>DURATION</span></td>
+                                  <td class="tab-pane__training-body-table_second-padd" style="border: 1px solid"><span>PRICE</span></td>
+                                </tr>
+                                <tr>
+                                  <td style="border: 1px solid">
+                                    <p>E-commerce and content management, systems, HTML, basics, Adobe Photoshop Introduction</p>
+                                  </td>
+                                  <td style="border: 1px solid"> 
+                                    <p>from 1 full day to 3 days</p>
+                                  </td>
+                                  <td style="border: 1px solid">
+                                    <p>$ 220.00</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" style="text-align: right; border-color: transparent;"><strong>TOTAL</strong></td>
+                                  <td style="border: 1px solid"><strong>$ 220.00</strong></td>
+                                </tr>
+                              </table>
+                            </div>
+                            <div class="tab-pane__training-body-bank-account">
+                              <h3 class="text-uppercase">please make a payment to the following bank account:</h3>
+                              <table>
+                                <tr>
+                                  <td colspan="2">
+                                    <p>Barclays Bank Plc</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p>Acount name:</p>
+                                  </td>
+                                  <td>
+                                    <p>Aston Logistics Ltd</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p>Sort Code:</p>
+                                  </td>
+                                  <td>
+                                    <p>20-27-58</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p>Account:</p>
+                                  </td>
+                                  <td>
+                                    <p>33236919</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p>Payment ref:</p>
+                                  </td>
+                                  <td>
+                                    <p>300-54</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane__training-footer-row">
+                            <div class="tab-pane__training-footer-warning">
+                              <p>We only accept Wire and Bank Transfers for annual sibscriptions.</p>
+                              <p>Yearly billing price displayed below.</p>
+                            </div>
+                            <div class="tab-pane__training-footer-order">
+                              <table>
+                                <tr>
+                                  <td>
+                                    <p>You've selected:</p>
+                                  </td>
+                                  <td>
+                                    <p>Order total:</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><strong>First Aid Certifiicate</strong>
+                                    <p>online course</p>
+                                  </td>
+                                  <td style="vertical-align: top"><strong>$40.00</strong></td>
+                                </tr>
+                              </table>
+                            </div>
+                            <div class="tab-pane__training-footer-btn"><a href="#">Send Order </a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xs-12 training-checkout__body-col training-checkout__body-col_right">
+                  <div class="training-checkout__body-right">
+                    <h3>Wire and Bank Transfers</h3>
+                    <p>We only accept Wire and Bank Transfers for annual subscriptions.</p>
+                    <p>Please allow 2-3 business days for us to process your order. If you need to activate your subscription before that, please <a href="#">contact us.</a></p>
+                    <h3 class="pt-20">Any Questions? <a href="#">Contact us!</a></h3>
+                    <p>
+                       review our <a href="#">Terms of Services </a>and <a href="#">Privacy Policy.</a></p>
+                    <h3>Who use Moqups?</h3>
+                    <ul class="training-checkout__body-right-list">
+                      <li class="training-checkout__body-right-item"><img src="assets/img/logo/hbspt.png" alt="Logo"/></li>
+                      <li class="training-checkout__body-right-item"><img src="assets/img/logo/intel.png" alt="Logo"/></li>
+                      <li class="training-checkout__body-right-item"><img src="assets/img/logo/bbc.png" alt="Logo"/></li>
+                      <li class="training-checkout__body-right-item"><img src="assets/img/logo/sony.png" alt="Logo"/></li>
+                      <li class="training-checkout__body-right-item"><img src="assets/img/logo/microsoft.png" alt="Logo"/></li>
+                      <li class="training-checkout__body-right-item"><img src="assets/img/logo/pbs.png" alt="Logo"/></li>
+                      <li class="training-checkout__body-right-item"><img src="assets/img/logo/amazon.png" alt="Logo"/></li>
+                      <li class="training-checkout__body-right-item"><img src="assets/img/logo/lg.png" alt="Logo"/></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/foundation.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
